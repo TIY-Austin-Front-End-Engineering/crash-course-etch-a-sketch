@@ -3,8 +3,9 @@
 	height: 500px;
 	border-radius: 8px;
 	background: #9F0925;
-	padding-top: 75px;
+	max-width: 700px;
 	box-sizing: border-box;
+	margin: 0 auto;
 	box-shadow:
 		inset -12px 0px 20px #6B0912,
 		inset -4px -4px 5px #410106,
@@ -15,28 +16,88 @@
 }
 
 h1 {
+	color: #F4F4F1;
+	box-sizing: border-box;
+	padding: 25px;
+	height: 75px;
 	margin: 0;
-	position: absolute;
-	top: -1.7em;
-	left: 50%;
-	transform: translateX(-50%);
+	text-align: center;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 20px;
+	text-shadow: 1px 1px 5px #540C13;
+}
+
+h1 object {
+	vertical-align: bottom;
+	height: 1.5em;
+	padding: 0 10px;
 }
 
 .knob {
-	height: 50px;
-	width: 50px;
-	background-color: white;
+	height: 60px;
+	width: 60px;
+	background: linear-gradient(90deg, #B1AF9C, #FDF9E8);
 	border-radius: 50%;
 	position: absolute;
-	bottom: -40px;
+	bottom: 15px;
+}
+
+.knob::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 8px;
+	bottom: 8px;
+	left: 8px;
+	right: 8px;
+	border-radius: 50%;
+	background: linear-gradient(to right, #EFEBDF, #B9B4AF);
+	box-shadow:
+		-1px 0 2px #E9EBD5,
+		inset 1px 0px 2px #E9EBD5,
+		inset -1px 0px 2px #EDEDD9;
+}
+
+.knob::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 28px;
+	bottom: 28px;
+	left: 28px;
+	right: 28px;
+	border-radius: 50%;
+	background: #B0AFAB;
+	box-shadow:
+		-1px 0px 2px #B0AFAB,
+		1px 0px 2px #B0AFAB,
+		0px -1px 2px #B0AFAB,
+		0px 1px 2px #B0AFAB,
+		-3px 0 6px #EEEBDF,
+		2px 0 6px #B0AFAB,
+		-2px -1px 5px #EEEBDF,
+		-2px 2px 5px #EEEBDF;
 }
 
 #left {
-	left: -40px;
+	left: 0px;
+	box-shadow:
+		1px 2px 4px #999683,
+		inset -1px 1px 2px #FDF9E8,
+		4px 3px 0 #FDF9E8;
 }
 
 #right {
-	right: -40px;
+	right: 0px;
+	box-shadow:
+		inset -1px 1px 1px#F0F8ED,
+		inset 0px 1px 5px #A6AA9C,
+		-2px 3px 3px #8C8276,
+		-4px 3px 0 #9A7C6C,
+		-10px 5px 5px #5A010F;
 }
 
 .knob input {
@@ -68,7 +129,7 @@ canvas {
 	width: calc(100% - 150px);
 	display: block;
 	margin: 0 auto;
-	height: calc(100% - 75px);
+	height: calc(100% - 150px);
 	border-radius: 15px;
 	box-shadow:
 		inset 0px -1px 1px #AF759E,
