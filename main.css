@@ -1,0 +1,85 @@
+.etch-a-sketch {
+	position: relative;
+	height: 500px;
+	border-radius: 8px;
+	background: #9F0925;
+	padding-top: 75px;
+	box-sizing: border-box;
+	box-shadow:
+		inset -12px 0px 20px #6B0912,
+		inset -4px -4px 5px #410106,
+		inset -12px 6px 1px #B60113,
+		inset -8px 10px 12px #D59389,
+		inset 8px 0px 20px #900914,
+		inset 0px -25px 10px #9C0D14;
+}
+
+h1 {
+	margin: 0;
+	position: absolute;
+	top: -1.7em;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.knob {
+	height: 50px;
+	width: 50px;
+	background-color: white;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -40px;
+}
+
+#left {
+	left: -40px;
+}
+
+#right {
+	right: -40px;
+}
+
+.knob input {
+	height: 50px;
+	display: block;
+	width: 25px;
+	background: transparent;
+	border: 0;
+}
+
+.knob input:focus {
+	outline: 0;
+}
+
+.clockwise {
+	position: absolute;
+	right: 0;
+	border-radius: 0 100px 100px 0;
+}
+
+.counter-clockwise {
+	position: absolute;
+	left: 0;
+	border-radius:
+}
+
+canvas {
+	background: linear-gradient(-95deg, #BCD5F1, #F6FAFD 90%, #DFF0FD);
+	width: calc(100% - 150px);
+	display: block;
+	margin: 0 auto;
+	height: calc(100% - 75px);
+	border-radius: 15px;
+	box-shadow:
+		inset 0px -1px 1px #AF759E,
+		0px 3px 2px #BB112C,
+		inset -2px 0 1px #622C36,
+		3px 0 5px #86080D,
+		inset 2px 0px 1px #631143,
+		-3px 0 5px #7A052C,
+		-12px 0 8px #A7051A,
+		-15px 0 10px #AD0042,
+		0px 5px 2px #D78372,
+		inset 0 2px 1px #3B1F2D,
+		0px -3px 15px #6D0910;
+}
